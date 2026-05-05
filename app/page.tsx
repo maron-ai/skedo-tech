@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ImigongoDivider } from "@/components/ImigongoDivider";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -46,6 +47,8 @@ export default function Home() {
         </p>
       </section>
 
+      <ImigongoDivider />
+
       {/* Stats */}
       <section className="border-y border-white/10 px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -69,6 +72,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ImigongoDivider />
 
       {/* Contact */}
       <section id="contact" className="px-8 py-24 max-w-xl">

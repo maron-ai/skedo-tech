@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ImigongoDivider } from "@/components/ImigongoDivider";
 
 export const metadata: Metadata = {
   title: "Work — skedo.tech",
@@ -27,7 +28,9 @@ const projects = [
 
 export default function WorkPage() {
   return (
-    <section className="px-8 py-24 max-w-3xl">
+    <>
+      <ImigongoDivider />
+      <section className="px-8 py-24 max-w-3xl">
       <div className="space-y-0">
         {projects.map((p) => (
           <div
@@ -49,5 +52,6 @@ export default function WorkPage() {
         ))}
       </div>
     </section>
+    </>
   );
 }
