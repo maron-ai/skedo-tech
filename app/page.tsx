@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ImigongoDivider } from "@/components/ImigongoDivider";
 
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
             <p className="text-xs tracking-widest text-[var(--color-muted)] uppercase mb-1">
               Flagship
             </p>
-            <p className="text-base">Mulstra</p>
+            <a href="https://mulstra.com" target="_blank" rel="noopener noreferrer" className="text-base hover:text-white/70 transition-colors underline underline-offset-4 decoration-white/20">Mulstra</a>
           </div>
           <div>
             <p className="text-xs tracking-widest text-[var(--color-muted)] uppercase mb-1">
