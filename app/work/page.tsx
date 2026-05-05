@@ -10,7 +10,7 @@ const projects = [
     num: "01",
     name: "Mulstra",
     description:
-      "The web as infrastructure. Every website becomes an API.",
+      "Build structured data products without writing backend code. Define objects, wire up workflows, set permissions, visualize in dashboards, and let AI reason over your schema. Ships like a custom SaaS app — REST API, webhooks, workflow builder, shareable frontend.",
   },
   {
     num: "02",
