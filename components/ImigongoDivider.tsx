@@ -29,23 +29,23 @@ export function ImigongoDivider() {
   };
 
   const W = 1200;
-  const step = 40;
-  const amp = 10;
+  const step = 30;
+  const amp = 6;
   const strokeColor = "#ffffff";
-  const strokeW = 2.5;
-  const opacity = 0.55;
+  const strokeW = 1.2;
+  const opacity = 0.2;
 
   return (
     <div className="w-full overflow-hidden" aria-hidden="true">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox={`0 0 ${W} 60`}
+        viewBox={`0 0 ${W} 36`}
         preserveAspectRatio="none"
-        className="w-full h-[60px]"
+        className="w-full h-[36px]"
       >
         {/* Top pair — two zigzags pointing UP */}
         <path
-          d={zigzag(14, amp, W, step, "up")}
+          d={zigzag(10, amp, W, step, "up")}
           fill="none"
           stroke={strokeColor}
           strokeWidth={strokeW}
@@ -53,7 +53,7 @@ export function ImigongoDivider() {
           opacity={opacity}
         />
         <path
-          d={zigzag(24, amp, W, step, "up")}
+          d={zigzag(17, amp, W, step, "up")}
           fill="none"
           stroke={strokeColor}
           strokeWidth={strokeW}
@@ -63,7 +63,7 @@ export function ImigongoDivider() {
 
         {/* Bottom pair — two zigzags pointing DOWN */}
         <path
-          d={zigzag(36, amp, W, step, "down")}
+          d={zigzag(19, amp, W, step, "down")}
           fill="none"
           stroke={strokeColor}
           strokeWidth={strokeW}
@@ -71,7 +71,7 @@ export function ImigongoDivider() {
           opacity={opacity}
         />
         <path
-          d={zigzag(46, amp, W, step, "down")}
+          d={zigzag(26, amp, W, step, "down")}
           fill="none"
           stroke={strokeColor}
           strokeWidth={strokeW}
