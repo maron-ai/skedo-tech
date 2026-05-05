@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { ImigongoDivider } from "@/components/ImigongoDivider";
 import "./globals.css";
 
 const inter = Inter({
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
       <body className="min-h-screen flex flex-col">
-        <nav className="flex items-center justify-between px-8 py-5 border-b border-white/10">
+        <nav className="flex items-center justify-between px-8 py-5">
           <Link href="/" className="text-lg font-bold tracking-tight">
             skedo.tech
           </Link>
@@ -38,6 +39,7 @@ export default function RootLayout({
             </Link>
           </div>
         </nav>
+        <ImigongoDivider />
         <main className="flex-1">{children}</main>
       </body>
     </html>

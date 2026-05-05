@@ -47,10 +47,8 @@ export default function Home() {
         </p>
       </section>
 
-      <ImigongoDivider />
-
       {/* Stats */}
-      <section className="border-y border-white/10 px-8 py-8">
+      <section className="px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <p className="text-xs tracking-widest text-[var(--color-muted)] uppercase mb-1">
